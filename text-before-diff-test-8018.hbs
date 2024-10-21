@@ -4,15 +4,15 @@
             <div class="cell large-9">
                 <div class="section-heading--amplified text-margin-reset">
 
-                    {{#ifSet element="Title" }}
+                    {{#ifSet element="Heading" }}
                         <h2>
 
-                            <span class="amplified--prefix oho-animate fade-in">{{publish element="Title"}}</span>
+                            <span class="amplified--prefix oho-animate fade-in">{{publish element="Heading"}}</span>
 
                             
-
-                            <span class="amplified--title oho-animate fade-in"></span>
-                            
+                            {{#ifSet element="Prefix" }}
+                            <span class="amplified--title oho-animate fade-in">{{publish element="Prefix"}}</span>
+                            {{/ifSet}}
                         
                         
                         </h2>
