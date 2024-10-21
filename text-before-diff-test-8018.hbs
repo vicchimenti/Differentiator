@@ -21,8 +21,9 @@
                     {{#ifSet element="Link - Title" }}
                         <div class="section-heading__link global-spacing--2x oho-animate fade-in">
                             {{#ifSet element="Link - Internal Link"}}
-                                <a href="{{linkUrl}}" title="{{linkText}}"></a>
-                                {{}}
+                                <a href="{{linkUrl}}" title="{{linkText}}">{{publish element="Link - Title"}}</a>
+                                {{else}}
+                                {{#ifSet element="Link - External URL"}}
                             {{/ifSet}}
 
                         </div>
