@@ -4,18 +4,19 @@
             <div class="cell large-9">
                 <div class="section-heading--amplified text-margin-reset">
 
+                    {{#ifSet element="Title" }}
+                        <h2>
 
-                    <h2>
+                            <span class="amplified--prefix oho-animate fade-in">{{publish element="Title"}}</span>
 
-                        <span class="amplified--prefix oho-animate fade-in"></span>
+                            
 
+                            <span class="amplified--title oho-animate fade-in"></span>
+                            
                         
-
-                        <span class="amplified--title oho-animate fade-in"></span>
                         
-                    
-                    
-                    </h2>
+                        </h2>
+                    {{/ifSet}}
 
 
                     <t4 type="content" name="Link - Title" output="selective-output" process-format="true" format="<div class=&quot;section-heading__link global-spacing--2x oho-animate fade-in&quot;>
