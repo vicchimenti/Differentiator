@@ -1,0 +1,46 @@
+<section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro{{ contentId }}">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell large-9">
+                <div class="section-heading--amplified text-margin-reset">
+
+                    {{#ifSet element="Heading" }}
+                        <h2>
+
+                            <span class="amplified--prefix oho-animate fade-in">{{publish element="Heading"}}</span>
+
+                                                        {{!-- {{#ifSet element="Prefix" }}
+                                <span class="amplified--title oho-animate fade-in">{{publish element="Prefix"}}</span>
+                            {{/ifSet}} --}}
+
+                        
+                        
+                        </h2>
+                    {{/ifSet}}
+
+                    {{#ifSet element="Link - Title" }}
+                        <div class="section-heading__link global-spacing--2x oho-animate fade-in">
+
+                            {{#ifSet element="Link - Internal Link" }}
+
+                                {{#link element="Link - Internal Link" }} 
+                                    
+                                    <a href="{{linkUrl}}" title="{{linkText}}">{{publish element="Link - Title"}}</a>
+
+                                {{/link}}   
+
+                             {{else}}       
+                                    {{#ifSet element="Link - External URL"}}
+                                        <a href="{{publish element="Link - External URL"}}" title="{{publish element="Link - Title"}}" target="_blank">{{publish element="Link - Title"}}</a>
+                                    {{/ifSet}}
+                            {{/ifSet}}
+
+
+                        </div>
+                    {{/ifSet}}
+
+                </div>
+            </div>
+        </div>
+
+        <div class="global-spacing--6x differentiators--set oho-animate-sequence">
