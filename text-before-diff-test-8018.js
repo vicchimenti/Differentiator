@@ -5,7 +5,7 @@
  *                  Differentiator Test
  *                  id:8018
  *
- *     @version 1.0.1
+ *     @version 1.0.2
  * 
  */
 
@@ -130,8 +130,10 @@ try {
      *  Link Container
      */
     let linkContainer = (diffDict.linkTitle.content && diffDict.linkInternalText.content && diffDict.linkInternalUri.content) ?
-        '<div class="section-heading__link global-spacing--2x oho-animate fade-in"><a href="' + diffDict.'" title="">':
-        '</div></div></div>';
+        '<div class="section-heading__link global-spacing--2x oho-animate fade-in"><a href="' + diffDict.linkInternalUri.content + '" title="' + diffDict.linkInternalText.content + '">' + diffDict.linkTitle.content + '</a></div>':
+        (diffDict.linkTitle.content && diffDict.linkExternal.content) ?
+        '<div class="section-heading__link global-spacing--2x oho-animate fade-in"><a href="' + diffDict.linkExternal.content + '" title="' + diffDict.linkTitle.content + '">' + diffDict.linkTitle.content + '</a></div>':
+        '<span class="hidden">No valid link information entered</span>';
 
 
 
@@ -162,6 +164,7 @@ try {
             openGrid,
             openSectionHeading,
             headingContainer,
+            linkContainer,
             closeSectionHeading,
             diffSet
         ]
