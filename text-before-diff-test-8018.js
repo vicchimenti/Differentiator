@@ -77,22 +77,6 @@ try {
         linkExternal: getContentValues('<t4 type="content" name="Link - External URL" output="normal" modifiers="striptags,htmlentities" />'),
         linkInternalText: getContentValues('<t4 type="content" name="Link - Internal Link" output="linktext" modifiers="nav_sections" />'),
         linkExternalUri: getContentValues('<t4 type="content" name="Link - Internal Link" output="linkurl" modifiers="nav_sections" />'),
-
-
-        headline: getContentValues('<t4 type="content" name="Title" output="normal" modifiers="striptags,htmlentities" />'),
-        articleSetup: getContentValues('<t4 type="content" name="Article Setup" output="normal" modifiers="striptags,htmlentities" />'),
-        articleSubhead: getContentValues('<t4 type="content" name="Article Subhead" output="normal" modifiers="striptags,htmlentities" />'),
-        mediaImage: getContentValues('<t4 type="content" name="Media Library Image" output="normal" formatter="path/*" />'),
-        externalImage: getContentValues('<t4 type="content" name="Image" output="imageurl" />'),
-        externalImageAlt: getContentValues('<t4 type="content" name="Alt text" output="normal" modifiers="striptags,htmlentities" />'),
-        imageCredit: getContentValues('<t4 type="content" name="Image Credit" output="normal" modifiers="striptags,htmlentities" />'),
-        caption: getContentValues('<t4 type="content" name="Image Caption" output="normal" modifiers="striptags,htmlentities" />'),
-        publishDate: getContentValues('<t4 type="content" name="Publish Date" output="normal" date_format="MMMM d, yyyy" />'),
-        author: getContentValues('<t4 type="content" name="Author" output="normal" modifiers="striptags,htmlentities" />'),
-        topics: getContentValues('<t4 type="content" name="Topics" output="normal" display_field="name" modifiers="htmlentities" />'),
-        fullStory: getContentValues('<t4 type="content" name="Story article" output="normal" modifiers="medialibrary,nav_sections" />'),
-
-
         contentId: getContentValues('<t4 type="meta" meta="content_id" />')
 
     };
