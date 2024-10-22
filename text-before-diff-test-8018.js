@@ -87,7 +87,7 @@ try {
 
 
     /***
-     *  Defaults
+     *  Section Wrapper
      */
     let openSection = (diffDict.contentId.content) ? 
         '<section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro' + diffDict.contentId.content + '">' :
@@ -95,6 +95,27 @@ try {
 
 
 
+
+    /***
+     *  Grid Container
+     */
+    let openGrid = '<div class="grid-container">';
+
+
+
+
+    /***
+     *  Section Heading
+     */
+    let openSectionHeading = '<div class="grid-x grid-margin-x"><div class="cell large-9"><div class="section-heading--amplified text-margin-reset"></div>';
+
+
+
+
+    /***
+     *  Close Section Heading
+     */
+    let closeSectionHeading = '</div></div></div>';
 
 
 
@@ -104,7 +125,11 @@ try {
     * */
     writeDocument(
         [
-            openSection
+            openSection,
+            openGrid,
+            openSectionHeading,
+            
+            closeSectionHeading
         ]
     );
  
@@ -119,9 +144,11 @@ try {
 <section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro<t4 type='meta' meta='content_id' />">
     
     <div class="grid-container">
+
         <div class="grid-x grid-margin-x">
             <div class="cell large-9">
                 <div class="section-heading--amplified text-margin-reset">
+
                     <h2>
                         <t4 type="content" name="Prefix" output="selective-output" process-format="true" format="<span class=&quot;amplified--prefix oho-animate fade-in&quot;><t4 type=&quot;content&quot; name=&quot;Prefix&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; /></span>" />
                         <t4 type="content" name="Heading" output="selective-output" process-format="true" format="<span class=&quot;amplified--title oho-animate fade-in&quot;><t4 type=&quot;content&quot; name=&quot;Heading&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; /></span>" />
