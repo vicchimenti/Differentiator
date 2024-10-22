@@ -78,7 +78,7 @@ try {
         linkTitle: getContentValues('<t4 type="content" name="Link - Title" output="normal" modifiers="striptags,htmlentities" />'),
         linkExternal: getContentValues('<t4 type="content" name="Link - External URL" output="normal" modifiers="striptags,htmlentities" />'),
         linkInternalText: getContentValues('<t4 type="content" name="Link - Internal Link" output="linktext" modifiers="nav_sections" />'),
-        linkExternalUri: getContentValues('<t4 type="content" name="Link - Internal Link" output="linkurl" modifiers="nav_sections" />'),
+        linkInternalUri: getContentValues('<t4 type="content" name="Link - Internal Link" output="linkurl" modifiers="nav_sections" />'),
         contentId: getContentValues('<t4 type="meta" meta="content_id" />')
 
     };
@@ -129,8 +129,8 @@ try {
     /***
      *  Link Container
      */
-    let linkContainer = (diffDict.linkTitle.content && diffDict.linkInternalText.content && diffDict.linkExternalUri.content) ?
-        '<div class="section-heading__link global-spacing--2x oho-animate fade-in">':
+    let linkContainer = (diffDict.linkTitle.content && diffDict.linkInternalText.content && diffDict.linkInternalUri.content) ?
+        '<div class="section-heading__link global-spacing--2x oho-animate fade-in"><a href="' + diffDict.'" title="">':
         '</div></div></div>';
 
 
