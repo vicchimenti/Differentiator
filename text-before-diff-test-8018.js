@@ -127,6 +127,16 @@ try {
 
 
     /***
+     *  Link Container
+     */
+    let linkContainer = (diffDict.linkTitle.content && diffDict.linkInternalText.content && diffDict.linkExternalUri.content) ?
+        '':
+        '</div></div></div>';
+
+
+
+
+    /***
      *  Close Section Heading
      */
     let closeSectionHeading = '</div></div></div>';
