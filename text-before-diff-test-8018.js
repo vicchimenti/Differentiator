@@ -178,7 +178,7 @@ try {
 }
 
 
-<section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro<t4 type='meta' meta='content_id' />">
+{/* <section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro<t4 type='meta' meta='content_id' />">
     
     <div class="grid-container">
 
@@ -197,4 +197,4 @@ try {
             </div>
         </div>
 
-        <div class="global-spacing--6x differentiators--set oho-animate-sequence"></div>
+        <div class="global-spacing--6x differentiators--set oho-animate-sequence"></div> */}
