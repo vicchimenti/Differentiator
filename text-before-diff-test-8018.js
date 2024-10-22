@@ -176,25 +176,3 @@ try {
 } catch (err) {
     document.write(err.message);
 }
-
-
-{/* <section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro<t4 type='meta' meta='content_id' />">
-    
-    <div class="grid-container">
-
-        <div class="grid-x grid-margin-x">
-            <div class="cell large-9">
-                <div class="section-heading--amplified text-margin-reset">
-
-                    <h2>
-                        <t4 type="content" name="Prefix" output="selective-output" process-format="true" format="<span class=&quot;amplified--prefix oho-animate fade-in&quot;><t4 type=&quot;content&quot; name=&quot;Prefix&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; /></span>" />
-                        <t4 type="content" name="Heading" output="selective-output" process-format="true" format="<span class=&quot;amplified--title oho-animate fade-in&quot;><t4 type=&quot;content&quot; name=&quot;Heading&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; /></span>" />
-                    </h2>
-                    <t4 type="content" name="Link - Title" output="selective-output" process-format="true" format="<div class=&quot;section-heading__link global-spacing--2x oho-animate fade-in&quot;>
-                        <a href=&quot;<t4 type=&quot;content&quot; name=&quot;Link - Internal Link&quot; output=&quot;linkurl&quot; modifiers=&quot;nav_sections&quot; /><t4 type=&quot;content&quot; name=&quot;Link - External URL&quot; output=&quot;normal&quot; />&quot; title=&quot;Visit <t4 type=&quot;content&quot; name=&quot;Link - Title&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; />&quot;><t4 type=&quot;content&quot; name=&quot;Link - Title&quot; output=&quot;normal&quot; modifiers=&quot;striptags,htmlentities&quot; /></a>
-                    </div>" />
-                </div>
-            </div>
-        </div>
-
-        <div class="global-spacing--6x differentiators--set oho-animate-sequence"></div> */}
