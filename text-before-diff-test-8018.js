@@ -113,3 +113,57 @@
         </div>
 
         <div class="global-spacing--6x differentiators--set oho-animate-sequence">
+
+
+
+        /***
+          *  write document once
+          * 
+          * */
+         writeDocument(
+             [
+                articleWrapper,
+                fulltextNewsDict.anchor.content,
+                openContainer,
+                openRow,
+                openColMd9,
+                formattedTopics,
+                titleWrapper,
+                closeColMd9,
+                closeRow,
+                openRow,
+                openByline,
+                byLine,
+                dateString,
+                closeByline,
+                closeRow,
+                closeContainer,
+                openImageWrapper,
+                imageString,
+                openImgAttributes,
+                openRow,
+                imageCreditString,
+                captionString,
+                closeRow,
+                closeImgAttributes,
+                closeImageWrapper,
+                openSummaryContainer,
+                openRow,
+                openColMd3,
+                closeColMd3,
+                openBody,
+                summaryString,
+                fullStoryString,
+                closeBody,
+                closeRow,
+                closeSummaryContainer,
+                closeWrapper
+             ]
+         );
+ 
+ 
+ 
+ 
+     } catch (err) {
+         document.write(err.message);
+     }
