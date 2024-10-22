@@ -65,6 +65,8 @@ function writeDocument(array) {
 try {
 
 
+
+
     /***
      *      Dictionary of content
      * */
@@ -80,6 +82,16 @@ try {
         contentId: getContentValues('<t4 type="meta" meta="content_id" />')
 
     };
+
+
+
+
+    /***
+     *  Defaults
+     */
+    let openSection = (diffDict.contentId.content) ? 
+        '<section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro' + diffDict.contentId.content + '">' :
+        '<section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro' + diffDict.contentName.content + '">';
 
 
 <section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro<t4 type='meta' meta='content_id' />">
