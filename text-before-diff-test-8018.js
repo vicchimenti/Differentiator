@@ -97,6 +97,20 @@ try {
 
 
     /***
+     *  Heading H2 Container
+     */
+    let headingContainer = (diffDict.heading.content && diffDict.prefix.content) ?
+        '<h2><span class="amplified--prefix oho-animate fade-in">' + diffDict.prefix.content + '</span><span class="amplified--title oho-animate fade-in">' + diffDict.heading.content + '</span></h2>' :
+        (diffDict.heading.content && !diffDict.prefix.content) ?
+        '<h2><span class="amplified--title oho-animate fade-in">' + diffDict.heading.content + '</span></h2>' :
+        (!diffDict.heading.content && diffDict.prefix.content) ?
+        '<h2><span class="amplified--prefix oho-animate fade-in">' + diffDict.prefix.content + '</span></h2>' :
+        '<span class="hidden">No valid heading entered</span>';
+
+
+
+
+    /***
      *  Grid Container
      */
     let openGrid = '<div class="grid-container">';
@@ -119,6 +133,15 @@ try {
 
 
 
+
+    /***
+     *  Differentiators Set
+     */
+    let diffSet = '<div class="global-spacing--6x differentiators--set oho-animate-sequence"></div>';
+
+
+
+
     /***
     *  write document once
     * 
@@ -128,8 +151,9 @@ try {
             openSection,
             openGrid,
             openSectionHeading,
-            
-            closeSectionHeading
+            headingContainer,
+            closeSectionHeading,
+            diffSet
         ]
     );
  
