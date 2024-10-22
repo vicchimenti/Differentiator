@@ -130,7 +130,7 @@ try {
      *  Link Container
      */
     let linkContainer = (diffDict.linkTitle.content && diffDict.linkInternalText.content && diffDict.linkExternalUri.content) ?
-        '':
+        '<div class="section-heading__link global-spacing--2x oho-animate fade-in">':
         '</div></div></div>';
 
 
