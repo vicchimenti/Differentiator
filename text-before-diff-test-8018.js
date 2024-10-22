@@ -1,13 +1,13 @@
-    /***
-     *     @author  Victor Chimenti, MSCS
-     *     @file    text-before.js
-     *                  text/before
-     *                  Differentiator Test
-     *                  id:8018
-     *
-     *     @version 1.0.1
-     * 
-     */
+/***
+ *     @author  Victor Chimenti, MSCS
+ *     @file    text-before.js
+ *                  text/before
+ *                  Differentiator Test
+ *                  id:8018
+ *
+ *     @version 1.0.1
+ * 
+ */
 
 
 
@@ -16,35 +16,35 @@
 
 
 
-    /***
-     *      Import T4 Utilities
-     */
-    // importClass(com.terminalfour.media.IMediaManager);
-    importClass(com.terminalfour.spring.ApplicationContextProvider);
-    importClass(com.terminalfour.publish.utils.BrokerUtils);
-    // importClass(com.terminalfour.media.utils.ImageInfo);
+/***
+ *      Import T4 Utilities
+ */
+// importClass(com.terminalfour.media.IMediaManager);
+importClass(com.terminalfour.spring.ApplicationContextProvider);
+importClass(com.terminalfour.publish.utils.BrokerUtils);
+// importClass(com.terminalfour.media.utils.ImageInfo);
 
 
 
 
-    /***
-     *      Extract values from T4 element tags
-     *      and confirm valid existing content item field
-     */
-    function getContentValues(tag) {
-        try {
-            let _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag).trim();
-            return {
-                isError: false,
-                content: _tag == '' ? null : _tag
-            };
-        } catch (error) {
-            return {
-                isError: true,
-                message: error.message
-            };
-        }
+/***
+ *      Extract values from T4 element tags
+ *      and confirm valid existing content item field
+ */
+function getContentValues(tag) {
+    try {
+        let _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag).trim();
+        return {
+            isError: false,
+            content: _tag == '' ? null : _tag
+        };
+    } catch (error) {
+        return {
+            isError: true,
+            message: error.message
+        };
     }
+}
 
 
 
@@ -52,17 +52,17 @@
 
 
 
- 
-    /***
-     *      Write the document
-     */
-    function writeDocument(array) {
 
-        for (let i = 0; i < array.length; i++) {
+/***
+ *      Write the document
+ */
+function writeDocument(array) {
 
-            document.write(array[i]);
-        }
+    for (let i = 0; i < array.length; i++) {
+
+        document.write(array[i]);
     }
+}
 
 
     
