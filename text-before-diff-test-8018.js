@@ -94,7 +94,30 @@ try {
         '<section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro' + diffDict.contentName.content + '">';
 
 
+
+
+
+
+    /***
+    *  write document once
+    * 
+    * */
+    writeDocument(
+        [
+            openSection
+        ]
+    );
+ 
+ 
+ 
+ 
+} catch (err) {
+    document.write(err.message);
+}
+
+
 <section class="differentiators bg--dark bg--teal bg--gradient global-padding--15x oho-animate-sequence" id="intro<t4 type='meta' meta='content_id' />">
+    
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell large-9">
@@ -110,23 +133,4 @@ try {
             </div>
         </div>
 
-        <div class="global-spacing--6x differentiators--set oho-animate-sequence">
-
-
-
-        /***
-          *  write document once
-          * 
-          * */
-         writeDocument(
-             [
-                openSection
-             ]
-         );
- 
- 
- 
- 
-     } catch (err) {
-         document.write(err.message);
-     }
+        <div class="global-spacing--6x differentiators--set oho-animate-sequence"></div>
