@@ -132,7 +132,7 @@ try {
         // format        = publishCache.getTemplateFormatting(dbStatement, tid, beforeLayout);
         // formatString  = format.getFormatting();
         // html += com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, formatString);
-        html += beforeLayout;
+        html += String(beforeLayout);
         } catch(err) {
           throw "ERROR: "+beforeLayout+" does not exist";
         }
