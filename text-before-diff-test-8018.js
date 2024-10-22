@@ -120,42 +120,7 @@ try {
           * */
          writeDocument(
              [
-                articleWrapper,
-                fulltextNewsDict.anchor.content,
-                openContainer,
-                openRow,
-                openColMd9,
-                formattedTopics,
-                titleWrapper,
-                closeColMd9,
-                closeRow,
-                openRow,
-                openByline,
-                byLine,
-                dateString,
-                closeByline,
-                closeRow,
-                closeContainer,
-                openImageWrapper,
-                imageString,
-                openImgAttributes,
-                openRow,
-                imageCreditString,
-                captionString,
-                closeRow,
-                closeImgAttributes,
-                closeImageWrapper,
-                openSummaryContainer,
-                openRow,
-                openColMd3,
-                closeColMd3,
-                openBody,
-                summaryString,
-                fullStoryString,
-                closeBody,
-                closeRow,
-                closeSummaryContainer,
-                closeWrapper
+                openSection
              ]
          );
  
